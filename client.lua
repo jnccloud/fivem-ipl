@@ -6,20 +6,31 @@ end)
 
 Citizen.CreateThread(function()
 	for _,ipl in pairs(allIpls) do
-		loadInt(ipl.coords, ipl.interiorsProps)
+		loadInt(ipl.coords, ipl.interiorsProps, ipl.interiorsPropColors)
 	end
 end)
+--interiorsPropColors
+function loadInt(coordsTable, interiorProps, interiorsPropColors)
 
-function loadInt(coordsTable, table)
 	for _,coords in pairs(coordsTable) do
-		local interiorID = GetInteriorAtCoords(coords[1], coords[2], coords[3])
-		LoadInterior(interiorID)
-		for _,propName in pairs(table) do
-			Citizen.Wait(25)
-			EnableInteriorProp(interiorID, propName)
-		end
 
-		RefreshInterior(interiorID)
+		local interiorID = GetInteriorAtCoords(coords[1], coords[2], coords[3])
+
+		if IsValidInterior(interiorID) then
+			LoadInterior(interiorID)
+
+			for _,propName in pairs(interiorProps) do
+				EnableInteriorProp(interiorID, propName)
+			end
+
+			if interiorsPropColors then
+				for i = 1, #interiorsPropColors, 1 do
+					SetInteriorPropColor(interiorID, interiorsPropColors[i][1], interiorsPropColors[i][2])
+				end
+			end
+
+			RefreshInterior(interiorID)
+		end
 	end
 end
 
@@ -369,6 +380,64 @@ function RequestAllIpls()
 	RequestIpl("gr_case9_bunkerclosed") -- 24.43542, 2959.705, 58.35517
 	RequestIpl("gr_case10_bunkerclosed") -- -3058.714, 3329.19, 12.5844
 	RequestIpl("gr_case11_bunkerclosed") -- -3180.466, 1374.192, 19.9597
+
+	-- Smugglers run / Doomsday interiors
+
+	RequestIpl("xm_siloentranceclosed_x17")
+	RequestIpl("sm_smugdlc_interior_placement")
+	RequestIpl("sm_smugdlc_interior_placement_interior_0_smugdlc_int_01_milo_")
+	RequestIpl("xm_x17dlc_int_placement")
+	RequestIpl("xm_x17dlc_int_placement_interior_0_x17dlc_int_base_ent_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_10_x17dlc_int_tun_straight_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_11_x17dlc_int_tun_slope_flat_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_12_x17dlc_int_tun_flat_slope_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_13_x17dlc_int_tun_30d_r_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_14_x17dlc_int_tun_30d_l_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_15_x17dlc_int_tun_straight_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_16_x17dlc_int_tun_straight_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_17_x17dlc_int_tun_slope_flat_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_18_x17dlc_int_tun_slope_flat_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_19_x17dlc_int_tun_flat_slope_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_1_x17dlc_int_base_loop_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_20_x17dlc_int_tun_flat_slope_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_21_x17dlc_int_tun_30d_r_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_22_x17dlc_int_tun_30d_r_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_23_x17dlc_int_tun_30d_r_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_24_x17dlc_int_tun_30d_r_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_25_x17dlc_int_tun_30d_l_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_26_x17dlc_int_tun_30d_l_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_27_x17dlc_int_tun_30d_l_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_28_x17dlc_int_tun_30d_l_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_29_x17dlc_int_tun_30d_l_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_2_x17dlc_int_bse_tun_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_30_v_apart_midspaz_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_31_v_studio_lo_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_32_v_garagem_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_33_x17dlc_int_02_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_34_x17dlc_int_lab_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_35_x17dlc_int_tun_entry_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_3_x17dlc_int_base_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_4_x17dlc_int_facility_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_5_x17dlc_int_facility2_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_6_x17dlc_int_silo_01_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_7_x17dlc_int_silo_02_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_8_x17dlc_int_sub_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_9_x17dlc_int_01_milo_")
+	RequestIpl("xm_x17dlc_int_placement_strm_0")
+	RequestIpl("xm_bunkerentrance_door")
+	RequestIpl("xm_hatch_01_cutscene")
+	RequestIpl("xm_hatch_02_cutscene")
+	RequestIpl("xm_hatch_03_cutscene")
+	RequestIpl("xm_hatch_04_cutscene")
+	RequestIpl("xm_hatch_06_cutscene")
+	RequestIpl("xm_hatch_07_cutscene")
+	RequestIpl("xm_hatch_08_cutscene")
+	RequestIpl("xm_hatch_09_cutscene")
+	RequestIpl("xm_hatch_10_cutscene")
+	RequestIpl("xm_hatch_closed")
+	RequestIpl("xm_hatches_terrain")
+	RequestIpl("xm_hatches_terrain_lod")
+	RequestIpl("xm_mpchristmasadditions")
 	
 	-- Bunkers: Interior: 892.638, -3245.866, -98.265
 	--[[

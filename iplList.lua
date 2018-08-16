@@ -518,5 +518,54 @@ allIpls = {
 			"set_up"
 		},
 		coords={{1163.842,-3195.7,-39.008}}
+	},
+
+	-- Doomsday Facility
+	{
+		interiorsProps = {
+			"set_int_02_decal_01",
+			"set_int_02_lounge1",
+			"set_int_02_cannon",
+			"set_int_02_clutter1",
+			"set_int_02_crewemblem",
+			"set_int_02_shell",
+			"set_int_02_security",
+			"set_int_02_sleep",
+			"set_int_02_trophy1",
+			"set_int_02_paramedic_complete",
+			"set_Int_02_outfit_paramedic",
+			"set_Int_02_outfit_serverfarm"
+		},
+		coords={{483.2, 4810.5, -58.9}}
+	},
+
+	-- Smugglers Run Hangar
+	{
+		interiorsProps = {
+			"set_lighting_hangar_a",
+			"set_tint_shell",
+			"set_bedroom_tint",
+			"set_crane_tint",
+			"set_modarea",
+			"set_lighting_tint_props",
+			"set_floor_1",
+			"set_floor_decal_1",
+			"set_bedroom_modern",
+			"set_office_modern",
+			"set_bedroom_blinds_open",
+			"set_lighting_wall_tint01"
+		},
+
+		interiorsPropColors = {
+			{ "set_tint_shell", 1 },
+			{ "set_bedroom_tint", 1 },
+			{ "set_crane_tint", 1 },
+			{ "set_modarea", 1 },
+			{ "set_lighting_tint_props", 1 },
+			{ "set_floor_decal_1", 1 }
+		},
+
+		coords={{-1266.0, -3014.0, -47.0}}
 	}
+
 }
