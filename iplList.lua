@@ -536,6 +536,21 @@ allIpls = {
 			"set_Int_02_outfit_paramedic",
 			"set_Int_02_outfit_serverfarm"
 		},
+
+		interiorsPropColors = {
+			{ "set_int_02_decal_01", 1 },
+			{ "set_int_02_lounge1", 1 },
+			{ "set_int_02_cannon", 1 },
+			{ "set_int_02_clutter1", 1 },
+			{ "set_int_02_shell", 1 },
+			{ "set_int_02_security", 1 },
+			{ "set_int_02_sleep", 1 },
+			{ "set_int_02_trophy1", 1 },
+			{ "set_int_02_paramedic_complete", 1 },
+			{ "set_Int_02_outfit_paramedic", 1 },
+			{ "set_Int_02_outfit_serverfarm", 1 }
+		},
+
 		coords={{483.2, 4810.5, -58.9}}
 	},
 
