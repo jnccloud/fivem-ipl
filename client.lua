@@ -245,62 +245,44 @@ function RequestAllIpls()
 	-- RequestIpl("ex_sm_15_office_03b")	-- Power Broker: Convservative
 	-- RequestIpl("ex_sm_15_office_03c")	-- Power Broker: Polished
 
+	--
+	-- Apartment 1: -786.866, 315.764, 217.638
+	--
 
-	-- Modern 1 Apartment: -786.866, 315.764, 217.638
-	RequestIpl("apa_v_mp_h_01_a")
-	-- Modern 2 Apartment: -786.956, 315.622, 187.913
-	RequestIpl("apa_v_mp_h_01_c")
-	-- Modern 3 Apartment: -774.012, 342.042, 196.686
-	RequestIpl("apa_v_mp_h_01_b")
+	RequestIpl("apa_v_mp_h_01_a") -- Modern
+	-- RequestIpl("apa_v_mp_h_02_a") -- Mody
+	-- RequestIpl("apa_v_mp_h_03_a") -- Vibrant
+	-- RequestIpl("apa_v_mp_h_04_a") -- Sharp
+	-- RequestIpl("apa_v_mp_h_05_a") -- Monochrome
+	-- RequestIpl("apa_v_mp_h_06_a") -- Seductive
+	-- RequestIpl("apa_v_mp_h_07_a") -- Regal
+	-- RequestIpl("apa_v_mp_h_08_a") -- Aqua
 
-	-- Mody 1 Apartment: -787.074, 315.819, 217.638
-	RequestIpl("apa_v_mp_h_02_a")
-	-- Mody 2 Apartment: -786.819, 315.563, 187.913
-	RequestIpl("apa_v_mp_h_02_c")
-	-- Mody 3 Apartment: -774.138, 342.031, 196.686
-	RequestIpl("apa_v_mp_h_02_b")
+	--
+	-- Apartment 2: -786.956, 315.622, 187.913
+	--
 
-	-- Vibrant 1 Apartment: -786.624, 315.617, 217.638
-	RequestIpl("apa_v_mp_h_03_a")
-	-- Vibrant 2 Apartment: -786.958, 315.797, 187.913
-	RequestIpl("apa_v_mp_h_03_c")
-	-- Vibrant 3 Apartment: -774.022, 342.171, 196.686
-	RequestIpl("apa_v_mp_h_03_b")
+	-- RequestIpl("apa_v_mp_h_01_c") -- Modern
+	RequestIpl("apa_v_mp_h_02_c") -- Mody
+	-- RequestIpl("apa_v_mp_h_03_c") -- Vibrant
+	-- RequestIpl("apa_v_mp_h_04_c") -- Sharp
+	-- RequestIpl("apa_v_mp_h_05_c") -- Monochrome
+	-- RequestIpl("apa_v_mp_h_06_c") -- Seductive
+	-- RequestIpl("apa_v_mp_h_07_c") -- Regal
+	-- RequestIpl("apa_v_mp_h_08_c") -- Aqua
 
-	-- Sharp 1 Apartment: -787.090, 315.703, 217.638
-	RequestIpl("apa_v_mp_h_04_a")
-	-- Sharp 2 Apartment: -787.015, 315.707, 187.913
-	RequestIpl("apa_v_mp_h_04_c")
-	-- Sharp 3 Apartment: -773.897, 342.152, 196.686
-	RequestIpl("apa_v_mp_h_04_b")
+	--
+	-- Apartment 3: -774.012, 342.042, 196.686
+	--
 
-	-- Monochrome 1 Apartment: -786.988, 315.739, 217.638
-	RequestIpl("apa_v_mp_h_05_a")
-	-- Monochrome 2 Apartment: -786.880, 315.663, 187.913
-	RequestIpl("apa_v_mp_h_05_c")
-	-- Monochrome 3 Apartment: -774.067, 342.077, 196.686
-	RequestIpl("apa_v_mp_h_05_b")
-
-	-- Seductive 1 Apartment: -787.142, 315.694, 217.638
-	RequestIpl("apa_v_mp_h_06_a")
-	-- Seductive 2 Apartment: -787.096, 315.81, 187.913
-	RequestIpl("apa_v_mp_h_06_c")
-	-- Seductive 3 Apartment: -773.955, 341.989, 196.686
-	RequestIpl("apa_v_mp_h_06_b")
-
-	-- Regal 1 Apartment: -787.029, 315.711, 217.638
-	RequestIpl("apa_v_mp_h_07_a")
-	-- Regal 2 Apartment: -787.057, 315.656, 187.913
-	RequestIpl("apa_v_mp_h_07_c")
-	-- Regal 3 Apartment: -774.010, 342.096, 196.686
-	RequestIpl("apa_v_mp_h_07_b")
-
-	-- Aqua 1 Apartment: -786.946, 315.565, 217.638
-	RequestIpl("apa_v_mp_h_08_a")
-	-- Aqua 2 Apartment: -786.975, 315.723, 187.913
-	RequestIpl("apa_v_mp_h_08_c")
-	-- Aqua 3 Apartment: -774.034, 342.029, 196.686
-	RequestIpl("apa_v_mp_h_08_b")
+	-- RequestIpl("apa_v_mp_h_01_b") -- Modern
+	-- RequestIpl("apa_v_mp_h_02_b") -- Mody
+	-- RequestIpl("apa_v_mp_h_03_b") -- Vibrant
+	RequestIpl("apa_v_mp_h_04_b") -- Sharp
+	-- RequestIpl("apa_v_mp_h_05_b") -- Monochrome
+	-- RequestIpl("apa_v_mp_h_06_b") -- Seductive
+	-- RequestIpl("apa_v_mp_h_07_b") -- Regal
+	-- RequestIpl("apa_v_mp_h_08_b") -- Aqua
 
 	--
 	-- Bunkers, Biker clubhouses & Warehouses
@@ -387,7 +369,18 @@ function RequestAllIpls()
 	RequestIpl("sm_smugdlc_interior_placement")
 	RequestIpl("sm_smugdlc_interior_placement_interior_0_smugdlc_int_01_milo_")
 	RequestIpl("xm_x17dlc_int_placement")
+
 	RequestIpl("xm_x17dlc_int_placement_interior_0_x17dlc_int_base_ent_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_1_x17dlc_int_base_loop_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_2_x17dlc_int_bse_tun_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_3_x17dlc_int_base_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_4_x17dlc_int_facility_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_5_x17dlc_int_facility2_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_6_x17dlc_int_silo_01_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_7_x17dlc_int_silo_02_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_8_x17dlc_int_sub_milo_")
+	RequestIpl("xm_x17dlc_int_placement_interior_9_x17dlc_int_01_milo_")
+
 	RequestIpl("xm_x17dlc_int_placement_interior_10_x17dlc_int_tun_straight_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_11_x17dlc_int_tun_slope_flat_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_12_x17dlc_int_tun_flat_slope_milo_")
@@ -398,7 +391,7 @@ function RequestAllIpls()
 	RequestIpl("xm_x17dlc_int_placement_interior_17_x17dlc_int_tun_slope_flat_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_18_x17dlc_int_tun_slope_flat_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_19_x17dlc_int_tun_flat_slope_milo_")
-	RequestIpl("xm_x17dlc_int_placement_interior_1_x17dlc_int_base_loop_milo_")
+
 	RequestIpl("xm_x17dlc_int_placement_interior_20_x17dlc_int_tun_flat_slope_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_21_x17dlc_int_tun_30d_r_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_22_x17dlc_int_tun_30d_r_milo_")
@@ -409,20 +402,14 @@ function RequestAllIpls()
 	RequestIpl("xm_x17dlc_int_placement_interior_27_x17dlc_int_tun_30d_l_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_28_x17dlc_int_tun_30d_l_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_29_x17dlc_int_tun_30d_l_milo_")
-	RequestIpl("xm_x17dlc_int_placement_interior_2_x17dlc_int_bse_tun_milo_")
+
 	RequestIpl("xm_x17dlc_int_placement_interior_30_v_apart_midspaz_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_31_v_studio_lo_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_32_v_garagem_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_33_x17dlc_int_02_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_34_x17dlc_int_lab_milo_")
 	RequestIpl("xm_x17dlc_int_placement_interior_35_x17dlc_int_tun_entry_milo_")
-	RequestIpl("xm_x17dlc_int_placement_interior_3_x17dlc_int_base_milo_")
-	RequestIpl("xm_x17dlc_int_placement_interior_4_x17dlc_int_facility_milo_")
-	RequestIpl("xm_x17dlc_int_placement_interior_5_x17dlc_int_facility2_milo_")
-	RequestIpl("xm_x17dlc_int_placement_interior_6_x17dlc_int_silo_01_milo_")
-	RequestIpl("xm_x17dlc_int_placement_interior_7_x17dlc_int_silo_02_milo_")
-	RequestIpl("xm_x17dlc_int_placement_interior_8_x17dlc_int_sub_milo_")
-	RequestIpl("xm_x17dlc_int_placement_interior_9_x17dlc_int_01_milo_")
+
 	RequestIpl("xm_x17dlc_int_placement_strm_0")
 	RequestIpl("xm_bunkerentrance_door")
 	RequestIpl("xm_hatch_01_cutscene")
