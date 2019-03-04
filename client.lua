@@ -1,6 +1,5 @@
 Citizen.CreateThread(function()
 	LoadMpDlcMaps() -- required to load heist ipl?
-	EnableMpDlcMaps(true) -- not needed?
 	RequestAllIpls()
 end)
 
