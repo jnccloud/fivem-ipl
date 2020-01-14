@@ -1,5 +1,5 @@
 Citizen.CreateThread(function()
-	LoadMpDlcMaps() -- required to load heist ipl?
+	OnEnterMp() -- required to load heist ipl?
 	RequestAllIpls()
 end)
 
@@ -16,15 +16,15 @@ function loadInt(coordsTable, interiorProps, interiorsPropColors)
 		local interiorID = GetInteriorAtCoords(coords[1], coords[2], coords[3])
 
 		if IsValidInterior(interiorID) then
-			LoadInterior(interiorID)
+			PinInteriorInMemory(interiorID)
 
 			for _,propName in pairs(interiorProps) do
-				EnableInteriorProp(interiorID, propName)
+				ActivateInteriorEntitySet(interiorID, propName)
 			end
 
 			if interiorsPropColors then
 				for i = 1, #interiorsPropColors, 1 do
-					SetInteriorPropColor(interiorID, interiorsPropColors[i][1], interiorsPropColors[i][2])
+					SetInteriorEntitySetColor(interiorID, interiorsPropColors[i][1], interiorsPropColors[i][2])
 				end
 			end
 
