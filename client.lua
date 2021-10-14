@@ -38,6 +38,8 @@ end
 function RequestAllIpls()
 	-- Simeon: -47.162, -1115.333, 26.5
 	RequestIpl('shr_int')
+	EnableInteriorProp(GetInteriorAtCoordsWithType(-38.62, -1099.01, 27.31, "v_carshowroom"), "csr_beforeMission")
+	EnableInteriorProp(GetInteriorAtCoordsWithType(-38.62, -1099.01, 27.31, "v_carshowroom"), "shutter_open")
 
 	-- Trevor: 1985.481, 3828.768, 32.5
 	-- Trash or Tidy. Only choose one.
